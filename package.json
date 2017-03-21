@@ -1,0 +1,19 @@
+{
+  "name": "awm",
+  "version": "1.0.0",
+  "description": "Gabinet dermatologii estetycznej",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladom/awm.git"
+  },
+  "author": "Andrzej Ładomirski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladom/awm/issues"
+  },
+  "homepage": "https://github.com/ladom/awm#readme"
+}
