@@ -16,10 +16,10 @@ gulp.task('styles', function() {
 	.pipe(autoprefixer({
 		browsers: ["> 0.5%"]})
 	)
-	.pipe(gulp.dest('css/style.css'))
+	.pipe(gulp.dest('css/'))
 	
 });
 
 gulp.task('default', ['styles'], function() {
-	gulp.watch('style.sass', ['styles']);
+	gulp.watch('sass/style.sass', ['styles']);
 });
