@@ -179,13 +179,14 @@ header .container .slogan .slogan-text {
 
 .test {
   height: 1000px;
-  background-color: #fff;
+  background-color: #ccc;
 }
 
 #whole_image {
   width: 740px;
   height: 294px;
   position: relative;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -195,15 +196,14 @@ header .container .slogan .slogan-text {
   }
 }
 
-#whole_body {
+#whole_image #whole_body {
   position: absolute;
   top: 0;
-  left: 0;
   z-index: 1;
 }
 
 @media (max-width: 768px) {
-  #whole_body {
+  #whole_image #whole_body {
     left: -50vw;
   }
 }
@@ -211,7 +211,6 @@ header .container .slogan .slogan-text {
 #whole_image li {
   position: absolute;
   top: 0;
-  left: 0;
   z-index: 2;
   display: none;
   list-style: none;
@@ -254,7 +253,7 @@ header .container .slogan .slogan-text {
 }
 
 .treatments {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .treatments-text {
@@ -267,6 +266,11 @@ header .container .slogan .slogan-text {
 
 .treatments-text li {
   list-style-type: none;
+}
+
+.treatments-text li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #breast-text, #face-text, #hair-text, #hands-text, #legs-text, #neck-text, #torse-text {
