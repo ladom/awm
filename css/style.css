@@ -179,7 +179,7 @@ header .container .slogan .slogan-text {
 
 .test {
   height: 1000px;
-  background-color: #653300;
+  background-color: #fff;
 }
 
 #whole_image {
@@ -251,4 +251,32 @@ header .container .slogan .slogan-text {
 #whole_image li .describe p {
   font-size: 20px;
   text-align: justify;
+}
+
+.treatments {
+  margin-top: 50px;
+}
+
+.treatments-text {
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 20px;
+  color: #fff;
+  background-color: #653300;
+}
+
+.treatments-text li {
+  list-style-type: none;
+}
+
+#breast-text, #face-text, #hair-text, #hands-text, #legs-text, #neck-text, #torse-text {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
