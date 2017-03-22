@@ -1,0 +1,54 @@
+@import colors
+
+#whole_image
+	width: 740px
+	height: 294px
+	position: relative
+
+	@media (max-width: 768px)
+		transform: scale(0.5)
+	
+#whole_body
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 1
+
+	@media (max-width: 768px)
+		left: -50vw
+
+#whole_image
+
+	li
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 2
+		display: none
+		list-style: none
+
+		@media (max-width: 768px)
+			left: -50vw
+
+		.describe
+			width: 300px
+			padding: 20px
+			min-height: 100px
+			color: #fff
+			background-color: $navbg
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 3
+			line-height: 1.5
+
+			@media (max-width: 768px)
+				transform: scale(1.4)
+
+			h3
+				font-size: 22px
+				text-align: center
+
+			p
+				font-size: 20px
+				text-align: justify

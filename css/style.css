@@ -1,69 +1,107 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
-/*comment */
+/*comment*/
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  padding-top: 50px; }
+  padding-top: 50px;
+}
 
 .navbar-main {
   background-color: #653300;
   min-height: 50px;
-  border: none; }
-  .navbar-main .nav-container .navbar-header .hamburger-menu {
-    border-radius: 0;
-    width: 40px;
-    height: 40px;
-    background-color: #653300; }
-    .navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 {
-      width: 30px;
-      height: 24px;
-      position: relative;
-      top: -2px;
-      left: -6px;
-      margin: 0;
-      transform: rotate(0deg);
-      transition: 1s ease-in-out;
-      cursor: pointer; }
-      .navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span {
-        display: block;
-        position: absolute;
-        height: 4px;
-        width: 100%;
-        background: #eee;
-        opacity: 1;
-        left: 0;
-        transform: rotate(0deg);
-        transition: 0.25s ease-in-out; }
-      .navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span:nth-child(1) {
-        top: 0px; }
-      .navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span:nth-child(2) {
-        top: 10px; }
-      .navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span:nth-child(3) {
-        top: 20px; }
-    .navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1.open span:nth-child(1) {
-      top: 10px;
-      transform: rotate(135deg); }
-    .navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1.open span:nth-child(2) {
-      opacity: 0;
-      left: -30px; }
-    .navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1.open span:nth-child(3) {
-      top: 10px;
-      transform: rotate(-135deg); }
-  .navbar-main .nav-container .navbar-header .navbar-brand {
-    padding: 0; }
-    .navbar-main .nav-container .navbar-header .navbar-brand img {
-      max-height: 40px;
-      margin-top: 5px; }
-  .navbar-main .nav-container #navbar {
-    font-family: "Lato", sans-serif; }
-    .navbar-main .nav-container #navbar ul.nav li a {
-      color: #fff;
-      text-transform: uppercase; }
-      .navbar-main .nav-container #navbar ul.nav li a span {
-        color: #fff; }
-    .navbar-main .nav-container #navbar ul.nav li ul.dropdown-menu {
-      background-color: #653300; }
+  border: none;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu {
+  border-radius: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #653300;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  top: -2px;
+  left: -6px;
+  margin: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #eee;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1.open span:nth-child(1) {
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -30px;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1.open span:nth-child(3) {
+  top: 10px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.navbar-main .nav-container .navbar-header .navbar-brand {
+  padding: 0;
+}
+
+.navbar-main .nav-container .navbar-header .navbar-brand img {
+  max-height: 40px;
+  margin-top: 5px;
+}
+
+.navbar-main .nav-container #navbar {
+  font-family: "Lato", sans-serif;
+}
+
+.navbar-main .nav-container #navbar ul.nav li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar-main .nav-container #navbar ul.nav li a span {
+  color: #fff;
+}
+
+.navbar-main .nav-container #navbar ul.nav li ul.dropdown-menu {
+  background-color: #653300;
+}
 
 header {
   background-image: url(../pictures/AWM_jumbotron_sample.jpg);
@@ -71,36 +109,146 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 60vh; }
-  header .container .slogan {
-    background-color: rgba(100, 100, 100, 0.3);
-    min-width: 30vw;
-    float: left;
-    margin-top: 10vh; }
-    header .container .slogan .slogan-text {
-      font-size: 32px;
-      color: #fff;
-      text-align: center;
-      padding: 30px;
-      line-height: 50px; }
+  height: 60vh;
+}
+
+header .container .slogan {
+  background-color: rgba(100, 100, 100, 0.3);
+  min-width: 30vw;
+  float: left;
+  margin-top: 10vh;
+}
+
+header .container .slogan .slogan-text {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  line-height: 50px;
+}
 
 .about-content {
   color: #653300;
-  line-height: 1.5; }
-  .about-content h2 {
-    font-size: 24px;
-    display: inline-block;
-    width: 450px;
-    padding: 20px;
-    color: #fff;
-    background-color: #653300;
-    margin-top: 50px;
-    margin-bottom: 20px; }
-  .about-content h2:last-of-type {
-    float: right; }
-  .about-content p {
-    font-size: 22px;
-    text-align: justify;
-    display: inline-block; }
+  line-height: 1.5;
+}
 
-/*# sourceMappingURL=style.css.map */
+.about-content h2 {
+  font-size: 24px;
+  width: 450px;
+  padding: 20px;
+  color: #fff;
+  background-color: #653300;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 22px;
+  text-align: justify;
+}
+
+.about-content .AWM_photo {
+  max-width: 300px;
+  float: right;
+  margin-left: 20px;
+}
+
+.treatments-header {
+  color: #653300;
+  line-height: 1.5;
+}
+
+.treatments-header h2 {
+  font-size: 24px;
+  width: 450px;
+  padding: 20px;
+  color: #fff;
+  background-color: #653300;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.treatments-header p {
+  font-size: 22px;
+  text-align: justify;
+}
+
+.test {
+  height: 1000px;
+  background-color: #653300;
+}
+
+#whole_image {
+  width: 740px;
+  height: 294px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #whole_image {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+#whole_body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  #whole_body {
+    left: -50vw;
+  }
+}
+
+#whole_image li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  #whole_image li {
+    left: -50vw;
+  }
+}
+
+#whole_image li .describe {
+  width: 300px;
+  padding: 20px;
+  min-height: 100px;
+  color: #fff;
+  background-color: #653300;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  #whole_image li .describe {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+#whole_image li .describe h3 {
+  font-size: 22px;
+  text-align: center;
+}
+
+#whole_image li .describe p {
+  font-size: 20px;
+  text-align: justify;
+}
