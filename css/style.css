@@ -103,6 +103,36 @@ body {
   background-color: #653300;
 }
 
+.phone-girl {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 150px;
+  z-index: 20;
+}
+
+@media (max-width: 768px) {
+  .phone-girl {
+    display: none;
+  }
+}
+
+.phone-girl img {
+  width: 100%;
+}
+
+.phone-girl button {
+  margin: 10px 25px;
+  width: 100px;
+  background-color: #653300;
+  color: #ff8100;
+}
+
+.phone-girl button i {
+  font-size: 34px;
+  color: #ff8100;
+}
+
 header {
   background-image: url(../pictures/AWM_jumbotron_sample.jpg);
   background-position: center;
@@ -180,6 +210,81 @@ header .container .slogan .slogan-text {
 .test {
   height: 1000px;
   background-color: #ccc;
+}
+
+.crew {
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.crew .item {
+  width: 100vw;
+}
+
+.crew .item img {
+  height: 300px;
+  margin: 0 auto;
+}
+
+.crew .item h2 {
+  padding: 20px;
+  text-align: center;
+  color: #653300;
+}
+
+.carousel-indicators {
+  bottom: 70px;
+}
+
+.crew-header, .references-header {
+  color: #653300;
+  line-height: 1.5;
+}
+
+.crew-header h2, .references-header h2 {
+  font-size: 24px;
+  width: 450px;
+  padding: 20px;
+  color: #fff;
+  background-color: #653300;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.container-flex {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.container-flex .ref {
+  width: 20%;
+  margin: 2.5vw;
+}
+
+@media (max-width: 992px) {
+  .container-flex .ref {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-flex .ref {
+    width: 90%;
+  }
+}
+
+.container-flex .ref img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container-flex .ref:nth-child(5), .container-flex .ref:nth-child(6), .container-flex .ref:nth-child(7), .container-flex .ref:nth-child(8) {
+    display: none;
+  }
 }
 
 #whole_image {
@@ -275,6 +380,45 @@ header .container .slogan .slogan-text {
 
 #breast-text, #face-text, #hair-text, #hands-text, #legs-text, #neck-text, #torse-text {
   display: none;
+}
+
+footer {
+  background-color: #653300;
+  width: 100vw;
+  color: #fff;
+  min-height: 100px;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+footer .footer-container .footer-left {
+  padding: 20px;
+  line-height: 1.5;
+  width: 40%;
+}
+
+footer .footer-container .footer-right {
+  width: 40%;
+}
+
+footer .footer-container .footer-right img {
+  max-width: 100px;
+  padding: 10px;
+}
+
+footer .footer-container .footer-right iframe {
+  width: 90%;
+  height: 200px;
+  border: 2px solid #ff8100;
+  margin: 0 auto;
 }
 
 .hide {

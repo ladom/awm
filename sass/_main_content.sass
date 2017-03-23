@@ -46,3 +46,61 @@
 .test
 	height: 1000px
 	background-color: #ccc
+
+.crew
+	min-height: 300px
+	margin: 0 auto
+
+	.item
+		width: 100vw
+
+		img
+			height: 300px
+			margin: 0 auto
+
+		h2
+			padding: 20px
+			text-align: center
+			color: $navbg
+
+.carousel-indicators
+	bottom: 70px
+
+.crew-header, .references-header
+	color: $navbg
+	line-height: 1.5
+
+	h2
+		font-size: 24px
+		width: 450px
+		padding: 20px
+		color: #fff
+		background-color: $navbg
+		margin-top: 50px
+		margin-bottom: 20px
+		display: block
+		text-align: center
+
+.container-flex
+	display: flex
+	flex-wrap: wrap
+	width: 100vw	
+	
+	.ref
+		width: 20%
+		margin: 2.5vw
+
+		@media (max-width: 992px)
+			width: 45%
+
+		@media (max-width: 768px)
+			width: 90%
+
+		img
+			width: 100%
+
+	.ref:nth-child(5), .ref:nth-child(6), .ref:nth-child(7), .ref:nth-child(8)
+		@media (max-width: 768px)
+			display: none
+		
+		
